@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         darkTheme: AppTheme.darkTheme,
         theme: AppTheme.lightTheme,
         themeMode: themeService.isDarkModeOn ? ThemeMode.dark : ThemeMode.light,
-        home: AdvicerPage(),
+        home: AdvicerPageWrapperProvider(),
       );
     });
   }
