@@ -16,14 +16,18 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Consumer<ThemeService>(builder: (context, themeService, child) {
+    return Consumer<ThemeService>(builder: (
+      context,
+      themeService,
+      child,
+    ) {
       return MaterialApp(
-          debugShowCheckedModeBanner: false,
-          darkTheme: AppTheme.darkTheme,
-          theme: AppTheme.lightTheme,
-          themeMode:
-              themeService.isDarkModeOn ? ThemeMode.dark : ThemeMode.light,
-          home: AdvicerPage());
+        debugShowCheckedModeBanner: false,
+        darkTheme: AppTheme.darkTheme,
+        theme: AppTheme.lightTheme,
+        themeMode: themeService.isDarkModeOn ? ThemeMode.dark : ThemeMode.light,
+        home: AdvicerPage(),
+      );
     });
   }
 }
