@@ -1,0 +1,28 @@
+^G:\LEARNING\FLUTTER\ZERO_TO_MASTERY\ADVICER\BUILD\WINDOWS\X64\CMAKEFILES\4AA6C15AF678D6650FC629BAC742966E\FLUTTER_WINDOWS.DLL.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\Sumeet\dreams\flutter PROJECT_DIR=G:\Learning\Flutter\Zero_To_Mastery\advicer FLUTTER_ROOT=C:\Users\Sumeet\dreams\flutter FLUTTER_EPHEMERAL_DIR=G:\Learning\Flutter\Zero_To_Mastery\advicer\windows\flutter\ephemeral PROJECT_DIR=G:\Learning\Flutter\Zero_To_Mastery\advicer FLUTTER_TARGET=G:\Learning\Flutter\Zero_To_Mastery\advicer\lib\main.dart DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=G:\Learning\Flutter\Zero_To_Mastery\advicer\.dart_tool\package_config.json C:/Users/Sumeet/dreams/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\LEARNING\FLUTTER\ZERO_TO_MASTERY\ADVICER\BUILD\WINDOWS\X64\CMAKEFILES\5B107A0A90A6539AA1D9367F1D6D243F\FLUTTER_ASSEMBLE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\LEARNING\FLUTTER\ZERO_TO_MASTERY\ADVICER\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SG:/Learning/Flutter/Zero_To_Mastery/advicer/windows -BG:/Learning/Flutter/Zero_To_Mastery/advicer/build/windows/x64 --check-stamp-file G:/Learning/Flutter/Zero_To_Mastery/advicer/build/windows/x64/flutter/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
