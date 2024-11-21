@@ -1,6 +1,6 @@
 import 'package:advicer/2_application/core/services/theme_service.dart';
+import 'package:advicer/2_application/core/themes/theme.dart';
 import 'package:advicer/2_application/features/advice/advice_page.dart';
-import 'package:advicer/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
