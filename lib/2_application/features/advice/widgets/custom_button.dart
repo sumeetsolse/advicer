@@ -29,7 +29,6 @@ class CustomButton extends StatelessWidget {
             child: Center(
               child: Text(
                 'Get Advice',
-                style: themeData.textTheme.headlineSmall,
               ),
             ),
           ),

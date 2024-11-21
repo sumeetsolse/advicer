@@ -3,6 +3,7 @@ import 'package:advicer/2_application/core/widgets/cust_wid_error_message.dart';
 import 'package:advicer/2_application/features/advice/cubit/advicer_cubit.dart';
 import 'package:advicer/2_application/features/advice/widgets/custom_button.dart';
 import 'package:advicer/2_application/features/advice/widgets/wid_advice_field.dart';
+import 'package:advicer/injection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
@@ -13,7 +14,7 @@ class AdvicerPageWrapperProvider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => AdvicerCubit(),
+      create: (context) => sl<AdvicerCubit>(),
       child: const AdvicerPage(),
     );
   }
@@ -29,10 +30,7 @@ class AdvicerPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Advicer',
-          style: themeData.textTheme.displayLarge,
-        ),
+        title: Text('Advicer'),
         centerTitle: true,
         actions: [
           Switch(
@@ -52,7 +50,6 @@ class AdvicerPage extends StatelessWidget {
                 if (state is AdvicerInitial) {
                   return Text(
                     'Your Advice is waiting for you!',
-                    style: themeData.textTheme.displayLarge,
                   );
                 } else if (state is AdvicerStateLoading) {
                   return CircularProgressIndicator(

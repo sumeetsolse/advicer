@@ -12,10 +12,10 @@ const cacheFailureMessage = "cacheFailureMessage";
 const networkFailureMessage = "networkFailureMessage";
 
 class AdvicerCubit extends Cubit<AdvicerCubitState> {
-  AdvicerCubit() : super(AdvicerInitial());
-
-  final AdviceUsecases adviceUsecases = AdviceUsecases();
+  final AdviceUsecases adviceUsecases;
   //We can create instance of many use cases here
+
+  AdvicerCubit({required this.adviceUsecases}) : super(AdvicerInitial());
 
   void adviceRequested() async {
     String mapFailureMessage(Failure failure) {
