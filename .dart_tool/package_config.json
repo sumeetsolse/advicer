@@ -44,6 +44,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "dartz",
+      "rootUri": "file:///C:/Users/Sumeet/AppData/Local/Pub/Cache/hosted/pub.dev/dartz-0.10.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "equatable",
       "rootUri": "file:///C:/Users/Sumeet/AppData/Local/Pub/Cache/hosted/pub.dev/equatable-2.0.5",
       "packageUri": "lib/",
@@ -200,7 +206,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2024-11-19T11:09:06.566904Z",
+  "generated": "2024-11-21T10:08:30.168938Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///C:/Users/Sumeet/dreams/flutter",

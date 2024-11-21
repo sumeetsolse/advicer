@@ -64,7 +64,7 @@ class AdvicerPage extends StatelessWidget {
                   );
                 } else if (state is AdvicerStateError) {
                   return CustWidErrorMessage(
-                    paraErrorMessage: "error",
+                    paraErrorMessage: state.message,
                   );
                 }
                 return const SizedBox();
